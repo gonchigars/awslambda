@@ -3,7 +3,7 @@ import { S3Client, ListObjectsV2Command } from "@aws-sdk/client-s3";
 const s3Client = new S3Client({});
 
 export const handler = async (event) => {
-    const bucketName = event.bucketName || 'shashank2027test'; // Using the bucket name from your error message
+    const bucketName = event.bucketName || 'shashank2027test'; 
 
     try {
         const command = new ListObjectsV2Command({
